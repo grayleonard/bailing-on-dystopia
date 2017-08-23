@@ -110,9 +110,19 @@ a:hover {
 .header {
 	font-weight: 700;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('bailingondystopia.jpg') center top;
   -webkit-background-size: cover;
@@ -476,6 +486,8 @@ a:hover {
 	color: black;
 	position: fixed;
 	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
 	-webkit-transition-duration: 0.5s;
 	     -o-transition-duration: 0.5s;
 	        transition-duration: 0.5s;
