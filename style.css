@@ -135,8 +135,7 @@ a:hover {
 .header::after {
 	content: 'cover by lorem ipsum';
 	position: absolute;
-	top: calc(100vh + 30px);
-	margin-top: 20px;
+	top: calc(100vh + 3px);
 	left: 50px;
 	font-size: 13px;
 }
